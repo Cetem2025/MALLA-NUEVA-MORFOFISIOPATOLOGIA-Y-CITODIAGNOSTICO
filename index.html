@@ -153,16 +153,16 @@ h1 {
   <script>
     const malla = document.getElementById("malla");
 
-    const Semestre = {
+     const Semestre = {
       "Semestre 1": ["Química General y Orgánica", "Biología Celular", "Matemática Básica", "Introducción a la Tecnología Médica", "Integrado de Habilidades Cientificas Para la Tecnología Médica", "Antropología"],
       "Semestre 2": ["Bioquímica General", "Morfología Básica", "Tecnología Médica en el Equipo de Salud", "Bioseguridad y Procedimientos de Apoyo Diagnóstico", "Psicología de Atención al Paciente", "Ética"],
       "Semestre 3": ["Integrado Fisiología - fisiopatología - Farmacología I", "Salud Poblacional", "Infectologia Básica", "Bases Físicas de la Microscopía", "Bioanálisis Instrumental"],
       "Semestre 4": ["Integrado Fisiología - fisiopatología - Farmacología II", "Bioética", "Epidemiología", "Histoembriología Clínica", "Bases para el Procesamiento Citohistológico", "Hito Evaluativo Integrativo"],
-      "Semestre 5": ["Bioestadística", "Procedimientos para el Análisis Citohsitológico", "Histopatología General", "Bases del Diagnóstico Citogenético", "Persona y Sociedad"],
-      "Semestre 6": ["Radiobiología y Protección radiológica", "Imagenología Patológica", "Gestión de Calidad en Imagenología y Física Médica", "Técnicas Radiológicas II", "Electivo I: Formación e identidad", "Gestión en Equipos para el Alto Desempeño"],
-      "Semestre 7": ["Metodología de la Investigación", "Medicina Nuclear", "Ultrasonido", "Tomografía Computada I", "Electivo II: Formación e Identidad"],
-      "Semestre 8": ["Salud Digital", "Radioterapia", "Resonancia Magnética", "Tomografía Computada II", "Electivo III: Formación e Identidad", "Hito Evaluativo Interprofesional"],
-      "Semestre 9": ["Análisis Clínico Integrado", "Taller de Investigación Aplicado en Tecnología Médica en Imagenología y Física Médica", "Sistemas de Acreditación en Imagenología y Física Médica", "Electivo I", "Electivo II", "Gestión de Carrera y desarrollo Profesional"],
+      "Semestre 5": ["Bioestadística", "Histopatología General", "Procedimientos Para el Análisis Citohistológico", "Bases del Diagnóstico Citogenético", "Persona y Sociedad"],
+      "Semestre 6": ["Histopatología Avanzada", "Integrado Citohistológico Inicial", "Diagnóstico Citogenético Clínico", "Análisis Histoquímico", "Electivo I: Formación e identidad", "Gestión en Equipos para el Alto Desempeño"],
+      "Semestre 7": ["Metodología de la Investigación", "Informática Médica para Histopatología", "Citodiagnóstico Ginecológico General", "Diagnóstico Molecular", "Inmunohistoquímica Aplicada", "Electivo II: Formación e Identidad"],
+      "Semestre 8": ["Salud Digital", "Citopatología Ginecológica y Miscelánea", "Integrado Citohistológico Clínico", "Aplicaciones del Diagnóstico Molecular", "Electivo III: Formación e Identidad", "Hito Evaluativo Interprofesional"],
+      "Semestre 9": ["Taller de Investigación Aplicado en Tecnología Médica en Morfofisiopatología y Citodiagnóstico", "Sistemas de Acreditación en Anatomía Patológica", "Electivo I", "Electivo II", "Gestión de Carrera y desarrollo Profesional"],
       "Semestre 10": ["Internado"]
     };
 
@@ -187,43 +187,49 @@ h1 {
       "Ética": ["Antropología"],
       "Tecnología Médica en el Equipo de Salud": ["Introducción a la Tecnología Médica"],
      
-      "Integrado Fisiología - fisiopatología - Farmacología I": ["Bioquímica General"],
-      "Infectologia Básica": ["Morfología Básica"],
-      "Fundamentos de Física Médica": ["Matemática Básica"],
-      "Matemática integrada a la imagenología Médica": ["Matemática Básica"],
-    
+      "Integrado Fisiología - fisiopatología - Farmacología I": ["Química General y Orgánica", "Biología Celular", "Matemática Básica", "Introducción a la Tecnología Médica", "Integrado de Habilidades Cientificas Para la Tecnología Médica", "Antropología", "Bioquímica General", "Morfología Básica", "Tecnología Médica en el Equipo de Salud", "Bioseguridad y Procedimientos de Apoyo Diagnóstico", "Psicología de Atención al Paciente", "Ética"],
+      "Infectologia Básica": ["Química General y Orgánica", "Biología Celular", "Matemática Básica", "Introducción a la Tecnología Médica", "Integrado de Habilidades Cientificas Para la Tecnología Médica", "Antropología", "Bioquímica General", "Morfología Básica", "Tecnología Médica en el Equipo de Salud", "Bioseguridad y Procedimientos de Apoyo Diagnóstico", "Psicología de Atención al Paciente", "Ética"],
+      "Bases Físicas de la Microscopía": ["Química General y Orgánica", "Biología Celular", "Matemática Básica", "Introducción a la Tecnología Médica", "Integrado de Habilidades Cientificas Para la Tecnología Médica", "Antropología", "Bioquímica General", "Morfología Básica", "Tecnología Médica en el Equipo de Salud", "Bioseguridad y Procedimientos de Apoyo Diagnóstico", "Psicología de Atención al Paciente", "Ética"],
+      "Bioanálisis Instrumental": ["Química General y Orgánica", "Biología Celular", "Matemática Básica", "Introducción a la Tecnología Médica", "Integrado de Habilidades Cientificas Para la Tecnología Médica", "Antropología", "Bioquímica General", "Morfología Básica", "Tecnología Médica en el Equipo de Salud", "Bioseguridad y Procedimientos de Apoyo Diagnóstico", "Psicología de Atención al Paciente", "Ética"],
+      "Salud Poblacional": ["Química General y Orgánica", "Biología Celular", "Matemática Básica", "Introducción a la Tecnología Médica", "Integrado de Habilidades Cientificas Para la Tecnología Médica", "Antropología", "Bioquímica General", "Morfología Básica", "Tecnología Médica en el Equipo de Salud", "Bioseguridad y Procedimientos de Apoyo Diagnóstico", "Psicología de Atención al Paciente", "Ética"],
+      
       "Integrado Fisiología - fisiopatología - Farmacología II": ["Integrado Fisiología - fisiopatología - Farmacología I"],
       "Epidemiología": ["Salud Poblacional"],
-      "Física Medica I": ["Fundamentos de Física Médica"],
-      "Anatomía Imagenológica": ["Morfología Básica"],
+      "Histoembriología Clínica": ["Morfología Básica"],
+      "Bases para el Procesamiento Citohistológico": ["Bases Físicas de la Microscopía"],
+      "Bioética": ["Química General y Orgánica", "Biología Celular", "Matemática Básica", "Introducción a la Tecnología Médica", "Integrado de Habilidades Cientificas Para la Tecnología Médica", "Antropología", "Bioquímica General", "Morfología Básica", "Tecnología Médica en el Equipo de Salud", "Bioseguridad y Procedimientos de Apoyo Diagnóstico", "Psicología de Atención al Paciente", "Ética"],
+      "Hito Evaluativo Integrativo": ["Integrado Fisiología - fisiopatología - Farmacología I", "Salud Poblacional", "Infectologia Básica", "Bases Físicas de la Microscopía", "Bioanálisis Instrumental", "Integrado Fisiología - fisiopatología - Farmacología II", "Bioética", "Epidemiología", "Histoembriología Clínica", "Bases para el Procesamiento Citohistológico"],
+
       
       "Persona y Sociedad": ["Ética"],
-      "Informática medica Aplicada a la imagenología y Física medica": ["Matemática integrada a la imagenología Médica"],
+      "Procedimientos Para el Análisis Citohistológico": ["Bases para el Procesamiento Citohistológico"],
       "Bioestadística": ["Matemática Básica"],
-      "Física Medica II": ["Física Medica I"],
-      "Técnicas Radiológicas I": ["Anatomía Imagenológica", "Física Medica I"],
-      "Anatomía Imagenológica integrada": ["Anatomía Imagenológica"],
-      "Hito Evaluativo Integrativo": ["Bioquímica General", "Morfología Básica", "Tecnología Médica en el Equipo de Salud", "Bioseguridad y Procedimientos de Apoyo Diagnóstico", "Psicología de Atención al Paciente", "Ética", "Integrado Fisiología - fisiopatología - Farmacología I", "Salud Poblacional", "Infectologia Básica", "Fundamentos de Física Médica", "Matemática integrada a la imagenología Médica"],
+      "Histopatología General": ["Histoembriología Clínica"],
+      "Bases del Diagnóstico Citogenético": ["Bases para el Procesamiento Citohistológico"],
       
-      "Radiobiología y Protección radiológica": ["Física Medica II"],
-      "Técnicas Radiológicas II": ["Física Medica II", "Técnicas Radiológicas I"],
-      "Imagenología Patológica": ["Anatomía Imagenológica integrada"],
+      "Análisis Histoquímico": ["Procedimientos Para el Análisis Citohistológico"],
+      "Histopatología Avanzada": ["Histopatología General"],
+      "Diagnóstico Citogenético Clínico": ["Bases del Diagnóstico Citogenético"],
+      "Integrado Citohistológico Inicial": ["Procedimientos Para el Análisis Citohistológico", "Bases del Diagnóstico Citogenético"],
       
-      "Medicina Nuclear": ["Radiobiología y Protección radiológica", "Técnicas Radiológicas II"],
-      "Ultrasonido": ["Imagenología Patológica"],
-      "Tomografía Computada I": ["Técnicas Radiológicas II", "Imagenología Patológica"],
+      "Inmunohistoquímica Aplicada": ["Análisis Histoquímico"],
+      "Citodiagnóstico Ginecológico General": ["Histopatología Avanzada"],
+      "Diagnóstico Molecular": ["Diagnóstico Citogenético Clínico"],
+      "Informática Médica para Histopatología": ["Integrado Citohistológico Inicial"],
       
-      "Tomografía Computada II": ["Radiodiagnóstico II", "Patología radiológica"],
-      "Radioterapia": ["Tomografía computada"],
-      "Resonancia Magnética": ["Radiodiagnóstico II", "Patología radiológica"],
-      "Hito Evaluativo Interprofesional": ["Radiobiología y Protección radiológica", "Imagenología Patológica", "Gestión de Calidad en Imagenología y Física Médica", "Técnicas Radiológicas II", "Electivo I: Formación e identidad", "Gestión en Equipos para el Alto Desempeño", "Metodología de la Investigación", "Medicina Nuclear", "Ultrasonido", "Tomografía Computada I", "Electivo II: Formación e Identidad"],
+      "Citopatología Ginecológica y Miscelánea": ["Citodiagnóstico Ginecológico General"],
+      "Aplicaciones del Diagnóstico Molecular": ["Diagnóstico Molecular"],
+      "Integrado Citohistológico Clínico": ["Inmunohistoquímica Aplicada", "Citodiagnóstico Ginecológico General"],
+      "Hito Evaluativo Interprofesional": ["Metodología de la Investigación", "Informática Médica para Histopatología", "Citodiagnóstico Ginecológico General", "Diagnóstico Molecular", "Inmunohistoquímica Aplicada", "Electivo II: Formación e Identidad", "Salud Digital", "Citopatología Ginecológica y Miscelánea", "Integrado Citohistológico Clínico", "Aplicaciones del Diagnóstico Molecular", "Electivo III: Formación e Identidad"],
 
-      "Análisis Clínico Integrado": ["Tomografía Computada II", "Resonancia Magnética"],
-      "Taller de Investigación Aplicado en Tecnología Médica en Imagenología y Física Médica": ["Metodología de la Investigación", "Medicina Nuclear", "Ultrasonido", "Tomografía Computada I", "Electivo II: Formación e Identidad", "Salud Digital", "Radioterapia", "Resonancia Magnética", "Tomografía Computada II", "Electivo III: Formación e Identidad", "Hito Evaluativo Interprofesional"],
-
-      "Internado": ["Metodología de la Investigación", "Medicina Nuclear", "Ultrasonido", "Tomografía Computada I", "Electivo II: Formación e Identidad", "Salud Digital", "Radioterapia", "Resonancia Magnética", "Tomografía Computada II", "Electivo III: Formación e Identidad", "Hito Evaluativo Interprofesional"],
+      "Taller de Investigación Aplicado en Tecnología Médica en Morfofisiopatología y Citodiagnóstico": ["Metodología de la Investigación", "Informática Médica para Histopatología", "Citodiagnóstico Ginecológico General", "Diagnóstico Molecular", "Inmunohistoquímica Aplicada", "Electivo II: Formación e Identidad", "Salud Digital", "Citopatología Ginecológica y Miscelánea", "Integrado Citohistológico Clínico", "Aplicaciones del Diagnóstico Molecular", "Electivo III: Formación e Identidad", "Hito Evaluativo Interprofesional"],
+      "Sistemas de Acreditación en Anatomía Patológica": ["Integrado Citohistológico Clínico"], 
+      "Electivo I": ["Hito Evaluativo Interprofesional"], 
+      "Electivo II": ["Hito Evaluativo Interprofesional"], 
+      "Gestión de Carrera y desarrollo Profesional": ["Hito Evaluativo Interprofesional"],
+      
+      "Internado": ["Metodología de la Investigación", "Informática Médica para Histopatología", "Citodiagnóstico Ginecológico General", "Diagnóstico Molecular", "Inmunohistoquímica Aplicada", "Electivo II: Formación e Identidad", "Salud Digital", "Citopatología Ginecológica y Miscelánea", "Integrado Citohistológico Clínico", "Aplicaciones del Diagnóstico Molecular", "Electivo III: Formación e Identidad", "Hito Evaluativo Interprofesional"],
     };
-
     
   const estadoCursos = JSON.parse(localStorage.getItem("estadoCursos") || "{}");
 
